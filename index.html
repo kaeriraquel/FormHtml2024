@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Registration Form in HTML CSS</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+</head>
+
+<body>
+    <section class="container first">
+        <header>Registration Form</header>
+        <form action="#" class="form">
+            <div>
+                <label>Fólio</label>
+                <input type="text" placeholder="N° AT000012" required />
+                <label>Fecha</label>
+                <input type="number" placeholder="Día" required />
+                <input type="number" placeholder="Mes" required />
+                <input type="number" placeholder="Año" required />
+            </div>
+            <div>
+                <table border="1">
+                    <tr>
+                        <th>Llamada recibida</th>
+                        <th>Hora de salida</th>
+                        <th>En escena</th>
+                        <th>Inicio traslado</th>
+                        <th>Arribo hospital</th>
+                        <th>Tiempo espera</th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder=""></td>
+                        <td><input type="time" placeholder=""></td>
+                        <td><input type="text" placeholder=""></td>
+                        <td><input type="text" placeholder=""></td>
+                        <td><input type="text" placeholder=""></td>
+                        <td><input type="text" placeholder=""></td>
+                    </tr>
+                </table>
+                <div class="checkbox-container">
+                    <div class="checkbox-row">
+                        <span class="title">Datos del servicio/tipo:</span> <!-- Título a la izquierda -->
+                        <label><input type="checkbox"> Urgencia</label>
+                        <label><input type="checkbox"> T.Sencillo</label>
+                        <label><input type="checkbox"> T.Ida y vuelta</label>
+                        <label><input type="checkbox"> T.Foraneo</label>
+                    </div>
+                    <div class="checkbox-row">
+                        <label><input type="checkbox"> T.Con oxígeno</label>
+                        <label><input type="checkbox"> T.Terapia intermedia</label>
+                        <label><input type="checkbox"> T.Terapia intensiva</label>
+                    </div>
+                    <div class="checkbox-row">
+                        <label><input type="checkbox"> T.Incubadora sencilla</label>
+                        <label><input type="checkbox"> T.Incubadora con oxígeno</label>
+                        <label><input type="checkbox"> T.Incubadora terapia intensiva</label>
+                    </div>
+                </div>
+                <div class="linea-vida">
+                    <h3 style="text-align: center;">LINEA DE VIDA 844 3490 911</h3>
+                    <div class="row">
+                        <label class="label">Kms:</label>
+                        <input type="text" placeholder="">
+                    </div>
+                    <div class="row">
+                        <label class="label">Apoyo aéreo Matrícula:</label>
+                        <input type="text" placeholder="">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <table class="lugar-ocurrencia" border="1">
+                    <tr>
+                        <th class="title" colspan="8">LUGAR DE OCURRENCIA/TIPO</th>
+                    </tr>
+                    <tr>
+                        <td>Urgencia: <input type="checkbox"></td>
+                        <td>Escuela: <input type="checkbox"></td>
+                        <td>Vía publica: <input type="checkbox"></td>
+                        <td>Trabajo: <input type="checkbox"></td>
+                        <td>UCI: <input type="checkbox"></td>
+                        <td>Hospital: <input type="checkbox"></td>
+                        <td>Area C: <input type="checkbox"></td>
+                        <td>Hogar: <input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>Otro: <input type="checkbox"></td>
+                        <td>Carretera: <input type="checkbox"></td>
+                        <td>KM: <input type="checkbox"></td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <table class="ubicacion-tabla" border="1">
+                    <tr>
+                        <th class="vertical-text" rowspan="3">Ubicación</th>
+                        <td colspan="6">
+                            <label>Calle/Lugar: </label>
+                            <input type="text" placeholder="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Entre: </label>
+                            <input type="text" placeholder="">
+                        </td>
+                        <td>
+                            <label>Y: </label>
+                            <input type="text" placeholder="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Colonia: </label>
+                            <input type="text" placeholder="">
+                        </td>
+                        <td>
+                            <label>Delegación/Municipio: </label>
+                            <input type="text" placeholder="">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <table class="datos-paciente-tabla" border="1">
+                    <tr>
+                        <th class="vertical-text" rowspan="5">Datos del paciente</th>
+                        <td>
+                            <label>Nombre: </label>
+                            <input type="text" placeholder="Paciente nombre">
+                        </td>
+                        <td>
+                            <label>Edad: </label>
+                            <input type="text" placeholder="41">
+                        </td>
+                        <td>
+                            <label>Sexo: </label>
+                            <input type="text" placeholder="Femenino">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="6">
+                            <label>Domicilio: </label>
+                            <input type="text" placeholder="Domicilio origen">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>C.P.: </label>
+                            <input type="text" placeholder="">
+                        </td>
+                        <td>
+                            <label>Ciudad: </label>
+                            <input type="text" placeholder="">
+                        </td>
+                        <td>
+                            <label>Estado: </label>
+                            <input type="text" placeholder="">
+                        </td>
+                        <td>
+                            <label>Tel: </label>
+                            <input type="text" placeholder="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Derechohabiente:</td>
+                        <td>IMSS: <input type="checkbox"></td>
+                        <td>ISSTE: <input type="checkbox"></td>
+                        <td>SSA: <input type="checkbox"></td>
+                        <td>GMM: <input type="checkbox"></td>
+                        <td>N/A: <input type="checkbox"></td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <table class="mecanismo-tabla" border="1">
+                    <tr>
+                        <th class="vertical-text" rowspan="8">Mecanismo de lesión</th>
+                        <td colspan="6">
+                            <label>Choque automovilístico</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Frontal <input type="checkbox"></td>
+                        <td>Alcance <input type="checkbox"></td>
+                        <td>Lateral <input type="checkbox"></td>
+                        <td>Volcadura <input type="checkbox"></td>
+                        <td>Rotacional <input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>Motocicleta <input type="checkbox"></td>
+                        <td>Bicicleta <input type="checkbox"></td>
+                        <td>Maquinaria <input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>Contra objeto</td>
+                        <td>Fijo <input type="checkbox"></td>
+                        <td>En movimiento <input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>Parabrisas</td>
+                        <td>Completo <input type="checkbox"></td>
+                        <td>Roto o doblado <input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>Dentro del auto</td>
+                        <td>Si <input type="checkbox"></td>
+                        <td>No <input type="checkbox"></td>
+                        <td>Eyectado <input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>Cinturon</td>
+                        <td>Colocado <input type="checkbox"></td>
+                        <td>No colocado <input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>Atropellado <input type="checkbox"></td>
+                        <td>Automotor <input type="checkbox"></td>
+                        <td>Bicicleta <input type="checkbox"></td>
+                        <td>Motocicleta <input type="checkbox"></td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <table class="agente-causal-tabla" border="1">
+                    <tr>
+                        <th class="vertical-text" rowspan="8">Agente causal</th>
+                        <td>Arma de fuego PB. Calibre: <input type="text"></td>
+                        <td>Quemadura por:</td>
+                    </tr>
+                    <tr>
+                        <td>Arma blanca tipo: <input type="text"></td>
+                        <td>Eléctrica: <input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Intoxicación por ingesta de: <input type="text"></td>
+                        <td>Ácidos: <input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Intoxicación por inhalación de: <input type="text"></td>
+                        <td>Fuga: <input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Explosión <input type="text"></td>
+                        <td>Sustancia caliente: <input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Animal / Humano: <input type="text"></td>
+                        <td>Vapor / Gases: <input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Caida frontal <input type="checkbox">
+                            Lateral <input type="checkbox">
+                            Posterior <input type="checkbox">
+                        </td>
+                        <td>Producto biológico: <input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Propia altura: <input type="text"></td>
+                        <td>SQC: <input type="text">%</td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <table class="causas-clinicas-tabla" border="1">
+                    <tr>
+                        <th class="vertical-text" rowspan="5">Causas clínicas</th>
+                    </tr>
+                    <tr>
+                        <td>Neurológico <input type="checkbox"></td>
+                        <td>Digestivo <input type="checkbox"></td>
+                        <td>Gineco-ostetrico <input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>Cardiovascular <input type="checkbox"></td>
+                        <td>Urogenital <input type="checkbox"></td>
+                        <td>Mioesquelético <input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>Respiratorio <input type="checkbox"></td>
+                        <td>Infeccioso <input type="checkbox"></td>
+                        <td>Oftálmico <input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>Metabólico <input type="checkbox"></td>
+                        <td>Oncológico <input type="checkbox"></td>
+                        <td>Dental <input type="checkbox"></td>
+                    </tr>
+                </table>
+                <table class="antecedentes1-tabla" border="1">
+                    <tr>
+                        <th class="vertical-text" rowspan="5">Antecedentes</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            Otros:
+                            <textarea rows="4" placeholder="Escriba aquí..."></textarea>
+                        </td>
+                    </tr>
+                </table>
+                <table class="antecedentes2-tabla" border="1">
+                    <tr>
+                        <th class="vertical-text" rowspan="5">Antecedentes</th>
+                    </tr>
+                    <tr>
+                        <td>Fecha de inicio: <input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Hora de inicio: <input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Síntomas: <input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Signos: <input type="text"></td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <table class="parto-tabla" border="1">
+                    <tr>
+                        <th class="vertical-text" rowspan="6">Parto</th>
+                    </tr>
+                    <tr>
+                        <td>G</td>
+                        <td>P</td>
+                        <td>A</td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">FPP: <input type="text"></td>
+                        <td colspan="2">FUR: <input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Sem. gestación: <input type="text"></td>
+                        <td colspan="2">Membranas: <input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Inicio contracciones: <input type="text"></td>
+                        <td colspan="2">Frecuencia: <input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Duración: <input type="text"></td>
+                        <td colspan="2">Región: </td>
+                    </tr>
+                </table>
+                <table class="post-parto-tabla" border="1">
+                    <tr>
+                        <th class="vertical-text" rowspan="6">Post-parto</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Hora: <input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Lugar: <input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Alumbramiento</td>
+                    </tr>
+                    <tr>
+
+                    </tr>
+                    <tr>
+                        <td>Si <input type="checkbox"></td>
+                        <td>No <input type="checkbox"></td>
+                    </tr>
+                </table>
+                <table class="escala-apgar-tabla" border="1">
+                    <tr>
+                        <th class="vertical-text" rowspan="6">Escala de Apgar</th>
+                    </tr>
+                    <tr>
+                        <td>F. cardiaca</td>
+                        <td>Mayor 100x <input type="checkbox"></td>
+                        <td>Menor 100x <input type="checkbox"></td>
+                        <td>Sin pulso <input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>Esfuerzo resp.</td>
+                        <td>Normal <input type="checkbox"></td>
+                        <td>Resp. lenta <input type="checkbox"></td>
+                        <td>Ausente <input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>Irritabilidad</td>
+                        <td>Lo evita <input type="checkbox"></td>
+                        <td>Gestos y muecas <input type="checkbox"></td>
+                        <td>Ausente <input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>Tono muscular</td>
+                        <td>Activo <input type="checkbox"></td>
+                        <td>Poco mov. <input type="checkbox"></td>
+                        <td>Sin movimiento <input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>Coloración</td>
+                        <td>Nl. rosa <input type="checkbox"></td>
+                        <td>Manos y pies azules <input type="checkbox"></td>
+                        <td>Palidez general <input type="checkbox"></td>
+                    </tr>
+                </table>
+                <table class="datos-rn-table" border="1">
+                    <tr>
+                        <td>Datos R/N</td>
+                        <td>Vivo<input type="checkbox"></td>
+                        <td>Muerto<input type="checkbox"></td>
+                        <td>Sexo: Masculino <input type="checkbox"> Femenino<input type="checkbox"></td>
+                        <td>Apgar: 1 min.<input type="checkbox"> 5 min.<input type="checkbox"> 10 min.<input
+                                type="checkbox"></td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <table class="evaluacion-inicial-tabla" border="1">
+                    <tr>
+                        <th class="vertical-text" rowspan="11">Evaluación inicial</th>
+                    </tr>
+                    <tr>
+                        <td>Estado de conciencia</td>
+                        <td>Vía aérea</td>
+                        <td>Circulación</td>
+                        <td>Piel</td>
+                        <td>Caracteristicas</td>
+                        <td rowspan="10">
+                            <img src="images/img2.PNG" alt="">
+                        </td>
+                        <td>Herida <input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>Alerta <input type="checkbox"></td>
+                        <td>Permeable <input type="checkbox"></td>
+                        <td>Pulso <input type="checkbox"></td>
+                        <td>Normal <input type="checkbox"></td>
+                        <td>Fría <input type="checkbox"></td>
+                        <td>Fractura <input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>Estímulo verbal <input type="checkbox"></td>
+                        <td>Comprometida <input type="checkbox"></td>
+                        <td>Sin pulso <input type="checkbox"></td>
+                        <td>Pálida <input type="checkbox"></td>
+                        <td>Caliente <input type="checkbox"></td>
+                        <td>Esguince <input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>Estimulo dolor <input type="checkbox"></td>
+                        <td>Respira <input type="checkbox"></td>
+                        <td>Paro cardiaco <input type="checkbox"></td>
+                        <td>Cianótica <input type="checkbox"></td>
+                        <td>Diaforesis <input type="checkbox"></td>
+                        <td>Luxación <input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>Inconsciente <input type="checkbox"></td>
+                        <td>No respira <input type="checkbox"></td>
+                        <td> </td>
+                        <td>Rubor <input type="checkbox"></td>
+                        <td> </td>
+                        <td>Contusión <input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" rowspan="3">
+                            <img src="images/img1.PNG" alt="img1">
+                        </td>
+                        <td>Deformidad <input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>Punzante <input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>Edema <input type="checkbox"></td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <table class="evaluacion-inicial2-tabla" border="1">
+                    <tr>
+                        <th class="vertical-text" rowspan="6">Evaluación inicial</th>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Esferas de conciencia</td>
+                    </tr>
+                    <tr>
+                        <td>Esferas</td>
+                        <td colspan="2">Orientado</td>
+                    </tr>
+                    <tr>
+                        <td>Personal</td>
+                        <td>Si <input type="checkbox"></td>
+                        <td>No <input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>Tiempo</td>
+                        <td>Si <input type="checkbox"></td>
+                        <td>No <input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>Espacio</td>
+                        <td>Si <input type="checkbox"></td>
+                        <td>No <input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="5" colspan="4">
+                            <img src="images/img3.PNG" alt="">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </section>
+</body>
+
+</html>
