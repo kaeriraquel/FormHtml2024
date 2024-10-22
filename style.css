@@ -1,19 +1,22 @@
 /* Import Google font - Poppins */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
 body {
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 10px;
   background: #164D9F;
 }
+
 .container {
   position: relative;
   max-width: 90%;
@@ -23,168 +26,699 @@ body {
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
+
 .container header {
   font-size: 1.5rem;
   color: #333;
   font-weight: 500;
   text-align: center;
 }
+
 .container .form {
   margin-top: 30px;
 }
-.form .input-box {
-  width: 100%;
-  margin-top: 20px;
-}
-.input-box label {
-  color: #333;
-}
-.form :where(.input-box input, .select-box) {
-  position: relative;
-  height: 50px;
-  width: 100%;
-  outline: none;
-  font-size: 1rem;
-  color: #707070;
-  margin-top: 8px;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  padding: 0 15px;
-}
-.input-box input:focus {
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-}
-.form .column {
-  display: flex;
-  column-gap: 15px;
-}
-.form .gender-box {
-  margin-top: 20px;
-}
-.gender-box h3 {
-  color: #333;
-  font-size: 1rem;
-  font-weight: 400;
-  margin-bottom: 8px;
-}
-.form :where(.gender-option, .gender) {
-  display: flex;
-  align-items: center;
-  column-gap: 50px;
-  flex-wrap: wrap;
-}
-.form .gender {
-  column-gap: 5px;
-}
-.gender input {
-  accent-color: rgb(130, 106, 251);
-}
-.form :where(.gender input, .gender label) {
-  cursor: pointer;
-}
-.gender label {
-  color: #707070;
-}
-.address :where(input, .select-box) {
-  margin-top: 15px;
-}
-.select-box select {
-  height: 100%;
-  width: 100%;
-  outline: none;
-  border: none;
-  color: #707070;
-  font-size: 1rem;
-}
-.form button {
-  height: 55px;
-  width: 100%;
-  color: #fff;
-  font-size: 1rem;
-  font-weight: 400;
-  margin-top: 30px;
-  border: none;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  background: rgb(130, 106, 251);
-}
-.form button:hover {
-  background: rgb(88, 56, 250);
-}
+
+
 /*Responsive*/
 @media screen and (max-width: 500px) {
   .form .column {
     flex-wrap: wrap;
   }
+
   .form :where(.gender-option, .gender) {
     row-gap: 15px;
   }
 }
 
 .fecha-header {
-  display: flex;             /* Usa flexbox */
-  align-items: center;       /* Centra verticalmente los elementos */
-  justify-content: left;   /* Centra horizontalmente */
-  gap: 10px;                /* Espacio entre los elementos */
-  margin: 20px;             /* Margen alrededor del contenedor */
+  display: flex;
+  /* Usa flexbox */
+  align-items: center;
+  /* Centra verticalmente los elementos */
+  justify-content: start;
+  /* Centra horizontalmente */
+  gap: 10px;
+  /* Espacio entre los elementos */
+  margin-bottom: 10px;
 }
 
 .fecha-header label {
-  margin: 0;                /* Elimina márgenes de los labels */
+  margin: 0;
+  /* Elimina márgenes de los labels */
 }
 
 .fecha-header input {
-  width: 100px;             /* Ajusta el ancho de los inputs */
-  padding: 5px;            /* Espaciado interno */
+  width: 100px;
+  /* Ajusta el ancho de los inputs */
+  padding: 5px;
+  /* Espaciado interno */
 }
 
 /* tabla1 */
 .tiempos {
-  width: 70%;                 /* Establece el ancho de la tabla al 50% de la pantalla */
-  margin-left: 0;            /* Alinea la tabla a la izquierda */
-  border-collapse: collapse;  /* Combina los bordes de las celdas */
+  width: 80%;
+  /* Establece el ancho de la tabla al 50% de la pantalla */
+  margin-left: 0;
+  /* Alinea la tabla a la izquierda */
+  border-collapse: collapse;
+  /* Combina los bordes de las celdas */
 }
 
-.tiempos th, .tiempos td {
-  padding: 10px;             /* Espaciado interno en las celdas */
-  text-align: center;        /* Centra el texto en las celdas */
+.tiempos th,
+.tiempos td {
+  padding: 10px;
+  /* Espaciado interno en las celdas */
+  text-align: center;
+  /* Centra el texto en las celdas */
 }
 
 .tiempos th {
-  background-color: #f2f2f2; /* Color de fondo para las cabeceras */
-  font-weight:400;         /* Negrita para las cabeceras */
+  background-color: #f2f2f2;
+  /* Color de fondo para las cabeceras */
+  font-weight: 400;
+  /* Negrita para las cabeceras */
   font-size: 12px;
 }
 
 .tiempos .header-row th {
-  border: none;              /* Quita el borde de las cabeceras */
+  border: none;
+  /* Quita el borde de las cabeceras */
 }
 
 .tiempos td {
-  border: 1px solid black;   /* Aplica borde a las celdas de datos */
+  border: 1px solid black;
+  /* Aplica borde a las celdas de datos */
 }
 
 .tiempos td input {
-  width: 90%;                /* Ancho de los inputs dentro de las celdas */
-  padding: 5px;             /* Espaciado interno en los inputs */
-  box-sizing: border-box;    /* Incluye el padding en el ancho total */
+  width: 90%;
+  /* Ancho de los inputs dentro de las celdas */
+  padding: 5px;
+  /* Espaciado interno en los inputs */
+  box-sizing: border-box;
+  /* Incluye el padding en el ancho total */
 }
 
 /* datos-servicio-tabla */
 .datos-servicio-tabla {
-  width: 80%;                 /* Establece el ancho de la tabla al 50% de la pantalla */
-  border-collapse: collapse;   /* Combina los bordes de las celdas */
-  margin-left: 0;              /* Alinea la tabla a la izquierda */
+  width: 80%;
+  /* Establece el ancho de la tabla al 50% de la pantalla */
+  border-collapse: collapse;
+  /* Combina los bordes de las celdas */
+  margin-left: 0;
+  /* Alinea la tabla a la izquierda */
+  background-color: #164D9F;
+  color: white;
 }
 
 /* linea vida */
 
 .linea-vida {
-  width: 20%;                  /* Establece el ancho del div al 50% de la pantalla */
-  padding: 10px;              /* Espacio interno en el div */
-  box-sizing: border-box;      /* Incluye padding en el ancho total */
-  border: 1px solid #ccc;      /* Agrega un borde alrededor del div (opcional) */
+  width: 30%;
+  /* Establece el ancho del div al 50% de la pantalla */
+
+  box-sizing: border-box;
+  /* Incluye padding en el ancho total */
+  border: 1px solid #000000;
+  /* Agrega un borde alrededor del div (opcional) */
+  text-align: center;
+  /* Centra el contenido dentro de la línea de vida */
+  margin: 20px;
+  /* Espaciado alrededor de la sección */
+
 }
-.general-first-container{
+
+.linea-vida-h3 {
+  background-color: #164D9F;
+  color: white;
+  padding: 5px;
+  font-size: 12px;
+}
+
+.general-first-container {
   display: flex;
+}
+
+.row {
+  margin: 10px 0;
+  /* Espaciado entre las filas */
+}
+
+input[type="text"] {
+  width: 80%;
+  /* Ajusta el ancho del input según lo necesites */
+  font-size: 16px;
+  /* Tamaño de fuente para mejor legibilidad */
+  border: 1px solid #ccc;
+  /* Borde ligero */
+  border-radius: 5px;
+  /* Esquinas redondeadas */
+  padding-left: 2%;
+}
+
+/* lugar de ocurrencia */
+.lugar-ocurrencia {
+  width: 100%;
+  /* Asegura que el contenedor ocupe todo el ancho disponible */
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.lugar-ocurrencia table {
+  width: 100%;
+  /* Hace que la tabla ocupe el 100% del ancho del contenedor */
+  border-collapse: collapse;
+  /* Opcional: mejora la apariencia del borde */
+}
+
+.lugar-ocurrencia th,
+td {
+  /* Espaciado interno para mayor comodidad */
+  text-align: left;
+  /* Alineación del texto a la izquierda */
+}
+
+/* ubicacion */
+
+.ubicacion-tabla {
+  width: 100%;
+}
+
+.ubicacion-tabla table {
+  width: 100%;
+}
+
+.ubicacion-tabla th {
+  background-color: #164D9F;
+  color: #f2f2f2;
+}
+
+.ubicacion-text {
+  transform: rotate(-90deg);
+  border: none;
+  font-size: 12px;
+}
+
+/* datos paciente */
+
+.datos-paciente-tabla {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.datos-paciente-tabla table {
+  width: 100%;
+}
+
+.datos-paciente-tabla table th {
+  background-color: #164D9F;
+  color: #f2f2f2;
+}
+
+.paciente-text {
+  transform: rotate(-90deg);
+  border: none;
+  font-size: 12px;
+}
+
+/* mecanismo y agente causal */
+.general-second-container {
+  display: flex;
+}
+
+.general-second-container input {
+  width: 50%;
+}
+
+.agente-causal-tabla {
+  width: 50%;
+}
+
+.agente-causal-tabla input {
+  margin-left: 10px;
+  /* Espaciado entre el texto y el input */
+}
+
+.agente-text {
+  transform: rotate(-90deg);
+  border: none;
+  font-size: 12px;
+  width: 50px;
+  /* Ajusta este valor según sea necesario */
+  /* Otras propiedades opcionales */
+  text-align: center;
+  vertical-align: middle;
+  /* Alinea verticalmente el contenido */
+  display: inline-block;
+
+}
+
+.agente-causal-tabla table th {
+  background-color: #164D9F;
+  color: #f2f2f2;
+}
+
+.agente-causal-tabla td {
+  font-size: 12px;
+}
+
+.agente-causal-tabla table {
+  width: 100%;
+  /* Asegura que la tabla ocupe el 100% del ancho */
+  border-collapse: collapse;
+  /* Colapsa los bordes */
+}
+
+.mecanismo-tabla {
+  width: 50%;
+}
+
+.mecanismo-text {
+  transform: rotate(-90deg);
+  border: none;
+  font-size: 12px;
+  width: 50px;
+  /* Ajusta este valor según sea necesario */
+  /* Otras propiedades opcionales */
+  text-align: center;
+  vertical-align: middle;
+  /* Alinea verticalmente el contenido */
+  display: inline-block;
+}
+
+.mecanismo-tabla table th {
+  background-color: #164D9F;
+  color: #f2f2f2;
+}
+
+.mecanismo-tabla td {
+  font-size: 12px;
+  text-align: center;
+}
+
+.mecanismo-tabla td strong {
+  font-size: 12px;
+  text-align: left;
+}
+
+.mecanismo-tabla table {
+  width: 100%;
+  /* Asegura que la tabla ocupe el 100% del ancho */
+  border-collapse: collapse;
+  /* Colapsa los bordes */
+}
+
+*/ .mecanismo-tabla th,
+td {
+  border: none;
+  /* Quita todos los bordes */
+
+}
+
+.mecanismo-tabla tr {
+  border-top: 1px solid #000000;
+  /* Agrega un borde superior a cada fila */
+
+}
+
+/* Agregar un borde superior solo a la primera fila de encabezados */
+.mecanismo-tabla tr:first-child {
+  border-top: 1px solid #000000;
+  /* Borde superior para la fila de encabezado */
+}
+
+
+/* causas clinicas */
+.general-third-container {
+  display: flex;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.causas-clinicas-tabla table th {
+  background-color: #164D9F;
+  color: #f2f2f2;
+}
+
+.causas-clinicas-tabla {
+  width: 40%;
+}
+
+.antecedentes1-tabla {
+  width: 30%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.antecedentes2-tabla {
+  width: 40%;
+}
+
+.causas-clinicas-tabla table {
+  width: 100%;
+  /* Asegura que la tabla ocupe el 100% del ancho */
+  border-collapse: collapse;
+  /* Colapsa los bordes */
+}
+
+.causas-clinicas-tabla td {
+  text-align: center;
+}
+
+.antecedentes1-tabla table {
+  width: 100%;
+  /* Asegura que la tabla ocupe el 100% del ancho */
+  border-collapse: collapse;
+  /* Colapsa los bordes */
+}
+
+.antecedentes1-tabla textarea {
+  width: 100%;
+  /* Ajusta el ancho según sea necesario */
+  height: 19.5vh;
+  /* Ajusta la altura según sea necesario */
+  resize: none;
+  /* Evita que el usuario cambie el tamaño */
+}
+
+.antecedentes2-tabla table {
+  width: 100%;
+  /* Asegura que la tabla ocupe el 100% del ancho */
+  border-collapse: collapse;
+  /* Colapsa los bordes */
+  height: 24vh;
+}
+
+.causas-text,
+.ant1-text,
+.ant2-text {
+  transform: rotate(-90deg);
+  width: 60px;
+  /* Ajusta este valor según sea necesario */
+  /* Otras propiedades opcionales */
+  font-size: 12px;
+  text-align: center;
+  vertical-align: middle;
+  /* Alinea verticalmente el contenido */
+  display: inline-block;
+}
+
+.antecedentes1-tabla table th {
+  background-color: #164D9F;
+  color: #f2f2f2;
+}
+
+.antecedentes2-tabla table th {
+  background-color: #164D9F;
+  color: #f2f2f2;
+}
+
+/* parto */
+
+.general-fourth-container {
+  display: flex;
+  margin-top: 10px;
+}
+
+.post-text,
+.escala-text,
+.parto-text {
+  transform: rotate(-90deg);
+  width: 60px;
+  /* Ajusta este valor según sea necesario */
+  /* Otras propiedades opcionales */
+  font-size: 12px;
+  text-align: center;
+  vertical-align: middle;
+  /* Alinea verticalmente el contenido */
+  display: inline-block;
+}
+
+.general-fourth-container table th {
+  background-color: #164D9F;
+  color: #f2f2f2;
+}
+
+.table-datosrn {
+  width: 100%;
+}
+
+.table-datosrn table {
+  width: 100%;
+}
+
+.table-datosrn td {
+  text-align: center;
+}
+
+/* evaluacion inicial 1 */
+.general-fifth-container {
+  display: flex;
+  margin-top: 20px;
+}
+
+.evaluacion1-text {
+  transform: rotate(-90deg);
+  width: 60px;
+  /* Ajusta este valor según sea necesario */
+  /* Otras propiedades opcionales */
+  font-size: 12px;
+  text-align: center;
+  vertical-align: middle;
+  /* Alinea verticalmente el contenido */
+  display: inline-block;
+}
+
+.general-fifth-container table th {
+  background-color: #164D9F;
+  color: #f2f2f2;
+}
+
+.evaluacion-inicial-tabla {
+  width: 100%;
+}
+
+.evaluacion-inicial-tabla table {
+  width: 100%;
+}
+
+/* evaluacion inicial 2 */
+.general-sixth-container {
+  display: flex;
+  margin-top: 20px;
+}
+
+.evaluacion2-text {
+  transform: rotate(-90deg);
+  width: 60px;
+  /* Ajusta este valor según sea necesario */
+  /* Otras propiedades opcionales */
+  font-size: 12px;
+  text-align: center;
+  vertical-align: middle;
+  /* Alinea verticalmente el contenido */
+  display: inline-block;
+}
+
+.general-sixth-container table th {
+  background-color: #164D9F;
+  color: #f2f2f2;
+}
+
+.evaluacion-inicial2-tabla {
+  width: 100%;
+}
+
+.evaluacion-inicial2-tabla table {
+  width: 100%;
+}
+
+.image3 img {
+  width: 100%;
+  /* Ocupa todo el ancho de la celda */
+  height: 100%;
+  /* Ocupa toda la altura de la celda */
+  object-fit: cover;
+  /* Mantiene la proporción y cubre el área */
+}
+
+/* evaluacion secundaria */
+.general-seventh-container {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.evaluacionsecu-text {
+  transform: rotate(-90deg);
+  width: 60px;
+  /* Ajusta este valor según sea necesario */
+  /* Otras propiedades opcionales */
+  font-size: 12px;
+  text-align: center;
+  vertical-align: middle;
+  /* Alinea verticalmente el contenido */
+  display: inline-block;
+}
+
+.general-seventh-container table th {
+  background-color: #164D9F;
+  color: #f2f2f2;
+}
+
+.evaluacion-secundaria-tabla {
+  width: 100%;
+}
+
+.evaluacion-secundaria-tabla table {
+  width: 100%;
+}
+.evaluacion-secundaria-tabla td{
+  text-align: center;
+}
+
+/* signos vitales */
+.general-eighth-container {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.signos-text,.indicaciones, .plan, .medicamento {
+  transform: rotate(-90deg);
+  width: 60px;
+  /* Ajusta este valor según sea necesario */
+  /* Otras propiedades opcionales */
+  font-size: 12px;
+  text-align: center;
+  vertical-align: middle;
+  /* Alinea verticalmente el contenido */
+  display: inline-block;
+}
+
+.signos-vitales-tabla .vertical-text {
+  background-color: #164D9F;
+  color: #f2f2f2;
+}
+
+.signos-vitales-tabla table {
+  width: 100%;
+}
+.signos-vitales-tabla td,th{
+  font-size: 12px;
+}
+
+.signos-vitales-tabla {
+  width: 100%; /* Hace que la tabla ocupe el 100% del contenedor */
+  border-collapse: collapse; /* Opcional: colapsa bordes para mejor apariencia */
+}
+.signos-vitales-tabla textarea{
+  width: 100%;
+  height: 19.5vh;
+  resize: none;
+}
+
+/* destino */
+.general-ninth-container {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.destino {
+  transform: rotate(-90deg);
+  width: 60px;
+  /* Ajusta este valor según sea necesario */
+  /* Otras propiedades opcionales */
+  font-size: 12px;
+  text-align: center;
+  vertical-align: middle;
+  /* Alinea verticalmente el contenido */
+  display: inline-block;
+}
+
+.destino-tabla .vertical-text {
+  background-color: #164D9F;
+  color: #f2f2f2;
+}
+
+.destino-tabla table {
+  width: 100%;
+}
+.destino-tabla td,th{
+  font-size: 12px;
+}
+
+.destino-tabla {
+  width: 100%; /* Hace que la tabla ocupe el 100% del contenedor */
+  border-collapse: collapse; /* Opcional: colapsa bordes para mejor apariencia */
+}
+.firma{
+  text-align: center;
+}
+
+/* autorizacion */
+.autorizacion p{
+  text-align: justify;
+  font-size: 12px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+/* familiar */
+.div-familiar-content {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.familiar-text {
+  transform: rotate(-90deg);
+  width: 60px;
+  font-size: 12px;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.div-familiar-content table th {
+  background-color: #164D9F;
+  color: #f2f2f2;
+}
+
+.familiar-tabla {
+  width: 100%;
+}
+
+.familiar-tabla table {
+  width: 100%;
+}
+
+/* firmas */
+.footer-div{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin-top:5%;
+  margin-bottom: 5%;
+}
+
+.firmas {
+  width: 60%;
+  border-collapse: separate; 
+  border-spacing: 10px; 
+}
+
+.firmas td {
+  padding-top: 30px;
+  border-bottom: 2px solid black; 
+  text-align: center; 
+}
+
+.footer-div .blank{
+  padding-top: 30px;
+  border-bottom: 2px solid rgb(255, 255, 255); 
+  text-align: center; 
 }
