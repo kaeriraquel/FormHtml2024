@@ -12,11 +12,11 @@ body {
   align-items: center;
   justify-content: center;
   padding: 20px;
-  background: rgb(130, 106, 251);
+  background: #164D9F;
 }
 .container {
   position: relative;
-  max-width: 1000px;
+  max-width: 90%;
   width: 100%;
   background: #fff;
   padding: 25px;
@@ -119,4 +119,72 @@ body {
   .form :where(.gender-option, .gender) {
     row-gap: 15px;
   }
+}
+
+.fecha-header {
+  display: flex;             /* Usa flexbox */
+  align-items: center;       /* Centra verticalmente los elementos */
+  justify-content: left;   /* Centra horizontalmente */
+  gap: 10px;                /* Espacio entre los elementos */
+  margin: 20px;             /* Margen alrededor del contenedor */
+}
+
+.fecha-header label {
+  margin: 0;                /* Elimina márgenes de los labels */
+}
+
+.fecha-header input {
+  width: 100px;             /* Ajusta el ancho de los inputs */
+  padding: 5px;            /* Espaciado interno */
+}
+
+/* tabla1 */
+.tiempos {
+  width: 70%;                 /* Establece el ancho de la tabla al 50% de la pantalla */
+  margin-left: 0;            /* Alinea la tabla a la izquierda */
+  border-collapse: collapse;  /* Combina los bordes de las celdas */
+}
+
+.tiempos th, .tiempos td {
+  padding: 10px;             /* Espaciado interno en las celdas */
+  text-align: center;        /* Centra el texto en las celdas */
+}
+
+.tiempos th {
+  background-color: #f2f2f2; /* Color de fondo para las cabeceras */
+  font-weight:400;         /* Negrita para las cabeceras */
+  font-size: 12px;
+}
+
+.tiempos .header-row th {
+  border: none;              /* Quita el borde de las cabeceras */
+}
+
+.tiempos td {
+  border: 1px solid black;   /* Aplica borde a las celdas de datos */
+}
+
+.tiempos td input {
+  width: 90%;                /* Ancho de los inputs dentro de las celdas */
+  padding: 5px;             /* Espaciado interno en los inputs */
+  box-sizing: border-box;    /* Incluye el padding en el ancho total */
+}
+
+/* datos-servicio-tabla */
+.datos-servicio-tabla {
+  width: 80%;                 /* Establece el ancho de la tabla al 50% de la pantalla */
+  border-collapse: collapse;   /* Combina los bordes de las celdas */
+  margin-left: 0;              /* Alinea la tabla a la izquierda */
+}
+
+/* linea vida */
+
+.linea-vida {
+  width: 20%;                  /* Establece el ancho del div al 50% de la pantalla */
+  padding: 10px;              /* Espacio interno en el div */
+  box-sizing: border-box;      /* Incluye padding en el ancho total */
+  border: 1px solid #ccc;      /* Agrega un borde alrededor del div (opcional) */
+}
+.general-first-container{
+  display: flex;
 }
